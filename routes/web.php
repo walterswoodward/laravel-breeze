@@ -21,4 +21,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::get('/docsblade', function () {
+    // `resources/views/test.blade.php` must exist
+    return view('test');
+});
+
 require __DIR__.'/auth.php';
